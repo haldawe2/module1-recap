@@ -18,13 +18,13 @@ function getMaxNum(array) {
 
 /// Iteration 3: changeItem
 
-function changeItem (array, num1, num2) {
-    for (let i = 0; i < array.length; i++) {
-        if (array[i] == num1) {
-            array[i] = num2;
-        }
+function changeItem(array, num1, num2) {
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] == num1) {
+      array[i] = num2;
     }
-    return array;
+  }
+  return array;
 }
 
 // Iteration 3 tests:
@@ -34,8 +34,8 @@ function changeItem (array, num1, num2) {
 
 /// Iteration 4: orderByDate
 
-function orderByDate (array) {
-    return array.sort((person1, person2) => person1.year - person2.year);
+function orderByDate(array) {
+  return array.sort((person1, person2) => person1.year - person2.year);
 }
 
 // Iteration 4 tests:
@@ -77,15 +77,31 @@ function orderByDate (array) {
 /// Iteration 5: new machine gun
 
 class Weapon {
-    constructor (type, power, ammo) {
-        this.type = type;
-        this.power = power;
-        this.ammo = ammo;
-    }
+  constructor(type, power, ammo) {
+    this.type = type;
+    this.power = power;
+    this.ammo = ammo;
+    this.shootingId = null;
+  }
 
-    shoot() {
-        
-    }
+  shoot() {
+    this.shootingId = setInterval(() => {
+      this.ammo -= 1;
+      console.log("Ammo remainig: " + this.ammo);
+    }, 30);
+  }
+
+  stopShooting() {
+    console.log("Stopped shooting!");
+    clearInterval(this.shootingId);
+  }
+
+  reload(extraAmmo) {
+    setTimeout(() => {
+      this.ammo += extraAmmo;
+      console.log("Reloaded!");
+    }, 2000);
+  }
 }
 
 // Iteration 5 tests
