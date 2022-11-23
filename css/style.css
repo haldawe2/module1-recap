@@ -1,0 +1,47 @@
+* {
+    font-size: 16px;
+    color: white
+}
+
+nav {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navigation {
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    height: 18vh;
+    width: auto;
+    margin: 0 2vh
+}
+
+#navigation ul {
+    display: flex;
+}
+
+#navigation ul li a {
+    text-decoration: none;
+    font-size: 1.6em;
+    margin: 0 2vh;
+}
+
+#iconDiv {
+    margin-right: 2vh;
+}
+
+.icons {
+    filter: invert(1);
+    height: 6vh;
+    width: auto;
+    margin: 0 2vh;
+}
+
+main {
+    background-image: url("../img/elden_ring_background.jfif");
+}
