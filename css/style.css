@@ -44,4 +44,64 @@ nav {
 
 main {
     background-image: url("../img/elden_ring_background.jfif");
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-size: 5em;
+    text-align: center;
+    padding: 10vh 0;
+}
+
+#mainColumns {
+    display: flex;
+    padding: 2vh;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#mainText {
+    width: 40vw;
+}
+
+h2 {
+    font-size: 2em;
+    padding: 3vh 0;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1.2em;
+    padding: 2vh 0;
+}
+
+aside img {
+    height: 50vh;
+    width: auto;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#buttons button {
+    display: block;
+    font-size: 1.4em;
+    border-radius: 12px;
+    margin: 5vh 5vh;
+}
+
+#buy {
+    background-color: white;
+    color: black;
+    padding: 3vh 14vh;
+    border-style: none;
+}
+
+#play {
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 3vh 17vh;
 }
