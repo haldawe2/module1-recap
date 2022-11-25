@@ -105,3 +105,34 @@ aside img {
     border: 1px solid white;
     padding: 3vh 17vh;
 }
+
+#available {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.stores {
+    height: 10vh;
+    width: auto;
+}
+
+.ps4 {
+    height: 14vh;
+    width: auto;
+}
+
+#available > li {
+    margin: 0 3vw;
+    align-items: center;
+}
+
+#available img {
+    vertical-align: middle;
+}
+
+#available > li a {
+    text-decoration: none;
+    font-size: larger;
+    vertical-align: middle;
+}
